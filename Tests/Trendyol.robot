@@ -19,11 +19,11 @@ ${TERM} =    0
 ${SEARCH_TERM}
 
 *** Test Cases ***
-Logged out user can search for products
-    [Tags]  Smoke
-    Given TrendyolApp.user is not logged In
-    When TrendyolApp.Search for Products    ${START_URL}    ${SEARCH_TERM}
-    Then TrendyolApp.Search results contains relevant products
+#Logged out user can search for products
+#     [Tags]  Smoke
+#     Given TrendyolApp.user is not logged In
+#     When TrendyolApp.Search for Products    ${START_URL}    ${SEARCH_TERM}
+#     Then TrendyolApp.Search results contains relevant products
 
 #Logged out user can view a product
 #    [Tags]  Smoke
@@ -44,9 +44,9 @@ Logged out user can search for products
 #    Then TrendyolApp.Correct login page loads
 #
 
-#Should not be able to Invalid Logins
-#    @{InvalidLoginScenarios} =  DataManager.Get CSV Data    ${INVALID_CREDENTIALS_FILE_CSV}
-#    Login with Many Invalid Credentials     @{InvalidLoginScenarios}
+Should not be able to Invalid Logins
+    @{InvalidLoginScenarios} =  DataManager.Get CSV Data    ${INVALID_CREDENTIALS_FILE_CSV}
+    Login with Many Invalid Credentials     @{InvalidLoginScenarios}
 
 #Should be able to login
 #    [Tags]  Smoke

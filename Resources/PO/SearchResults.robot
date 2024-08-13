@@ -15,7 +15,7 @@ Verify Search Completed
 
 #    ${message}=	Set Variable If	${count} == ${24}
 #    run keyword if    ${count} == ${24}
-    Should Be Equal    ${count}    ${24}
+    run keyword and continue on failure     Should Be Equal    ${count}    ${24}
 #    Page Should Contain Element    xpath = //div[@class='prdct-cntnr-wrppr']//div[@class="p-card-wrppr with-campaign-view add-to-bs-card"]    limit=24
 #    Set selenium speed          .02s
 #    run keyword if test failed  Print Console Message   ${message}=TEST FAIL!

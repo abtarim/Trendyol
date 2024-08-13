@@ -58,7 +58,9 @@ Login with Many Invalid Credentials
 
 Navigate To Sign In Page
     go to    https://www.trendyol.com/giris?cb=%2F
+    sleep   .3s
     Correct login page loads
+    sleep    .9s
 
 Attempt Login
     [Arguments]     ${LoginScenario}

@@ -48,10 +48,10 @@ Logged out user must sign in to check out
 #    @{InvalidLoginScenarios} =  DataManager.Get CSV Data    ${INVALID_CREDENTIALS_FILE_CSV}
 #    Login with Many Invalid Credentials     @{InvalidLoginScenarios}
 
-#Should be able to login
-#    [Tags]  Smoke
-#    Given TrendyolApp.Navigate To Sign In Page
-#    When TrendyolApp.Login    ${USER}
-#    Then TrendyolApp.Verify User LoggedIn
+Should be able to login
+    [Tags]  Smoke
+    Given TrendyolApp.Navigate To Sign In Page
+    When TrendyolApp.Login    ${USER}
+    Then TrendyolApp.Verify User LoggedIn
 
 

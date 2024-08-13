@@ -7,7 +7,7 @@ ${SIGNIN_PAGE_VERIFIER_ELEMENTS_1} =    xpath = //label[.='E-Posta']
 ${SIGNIN_PAGE_VERIFIER_ELEMENTS_2} =    xpath = //label[.='Şifre']
 ${USER_EMAIL_ELEMENT} =                 xpath=//*[@id="login-email"]
 ${USER_PASSWORD_ELEMENT} =              xpath=//*[@id="login-password-input"]
-${SUBMIT_BUTTON} =                      css = .q-primary
+${SUBMIT_BUTTON} =                      xpath=//button[@class='q-primary q-fluid q-button-medium q-button submit']
 ${errorMessaage}
 ${user}
 ${email}

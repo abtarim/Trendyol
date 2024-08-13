@@ -1,201 +1,189 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-08-13T11:28:49.861887" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-08-13T11:41:07.335860" rpa="false" schemaversion="5">
 <suite id="s1" name="Trendyol" source="D:\Users\bilal\Projelerim\Software\Testing\RobotFramework\CourseDir\Trendyol\tests\trendyol.robot">
 <kw name="Begin Test Suite" owner="Common" type="SETUP">
 <kw name="Set Suite Variables" owner="Common">
 <kw name="Empty Browser" owner="App">
-<msg time="2024-08-13T11:28:50.090939" level="INFO">${empty_browser} = about:blank</msg>
+<msg time="2024-08-13T11:41:07.565912" level="INFO">${empty_browser} = about:blank</msg>
 <var>${empty_browser}</var>
-<status status="PASS" start="2024-08-13T11:28:50.090939" elapsed="0.000000"/>
-</kw>
-<kw name="Browser" owner="App">
-<msg time="2024-08-13T11:28:50.090939" level="INFO">${browser} = chrome</msg>
-<var>${browser}</var>
-<status status="PASS" start="2024-08-13T11:28:50.090939" elapsed="0.000000"/>
+<status status="PASS" start="2024-08-13T11:41:07.564912" elapsed="0.001000"/>
 </kw>
 <kw name="Url Address" owner="App">
-<msg time="2024-08-13T11:28:50.090939" level="INFO">${start_url} = https://www.trendyol.com/butik/liste/2/erkek</msg>
+<msg time="2024-08-13T11:41:07.565912" level="INFO">${start_url} = https://www.trendyol.com/butik/liste/2/erkek</msg>
 <var>${start_url}</var>
-<status status="PASS" start="2024-08-13T11:28:50.090939" elapsed="0.000000"/>
+<status status="PASS" start="2024-08-13T11:41:07.565912" elapsed="0.000000"/>
 </kw>
 <kw name="Search Term" owner="App">
-<msg time="2024-08-13T11:28:50.090939" level="INFO">${search_term} = Versele Laga Muhabbet Kuşu Yemi</msg>
+<msg time="2024-08-13T11:41:07.565912" level="INFO">${search_term} = Versele Laga Muhabbet Kuşu Yemi</msg>
 <var>${search_term}</var>
-<status status="PASS" start="2024-08-13T11:28:50.090939" elapsed="0.000000"/>
+<status status="PASS" start="2024-08-13T11:41:07.565912" elapsed="0.000000"/>
 </kw>
 <kw name="User Email" owner="App">
-<msg time="2024-08-13T11:28:50.091939" level="INFO">${user_email} = ab_tarim@hotmail.com</msg>
+<msg time="2024-08-13T11:41:07.565912" level="INFO">${user_email} = ab_tarim@hotmail.com</msg>
 <var>${user_email}</var>
-<status status="PASS" start="2024-08-13T11:28:50.091939" elapsed="0.000000"/>
+<status status="PASS" start="2024-08-13T11:41:07.565912" elapsed="0.000000"/>
 </kw>
 <kw name="User Password" owner="App">
-<msg time="2024-08-13T11:28:50.091939" level="INFO">${user_password} = @bt100Sx1</msg>
+<msg time="2024-08-13T11:41:07.566912" level="INFO">${user_password} = @bt100Sx1</msg>
 <var>${user_password}</var>
-<status status="PASS" start="2024-08-13T11:28:50.091939" elapsed="0.000000"/>
+<status status="PASS" start="2024-08-13T11:41:07.565912" elapsed="0.001000"/>
 </kw>
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2024-08-13T11:28:50.092939" level="INFO">&amp;{user} = { Email=ab_tarim@hotmail.com | Password=@bt100Sx1 }</msg>
+<msg time="2024-08-13T11:41:07.566912" level="INFO">&amp;{user} = { Email=ab_tarim@hotmail.com | Password=@bt100Sx1 }</msg>
 <var>&amp;{user}</var>
 <arg>Email=${user_email}</arg>
 <arg>Password=${user_password}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2024-08-13T11:28:50.091939" elapsed="0.001000"/>
+<status status="PASS" start="2024-08-13T11:41:07.566912" elapsed="0.000000"/>
 </kw>
 <kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-08-13T11:28:50.092939" level="INFO">&amp;{USER} = { Email=ab_tarim@hotmail.com | Password=@bt100Sx1 }</msg>
+<msg time="2024-08-13T11:41:07.567912" level="INFO">&amp;{USER} = { Email=ab_tarim@hotmail.com | Password=@bt100Sx1 }</msg>
 <arg>&amp;USER</arg>
 <arg>&amp;{user}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-08-13T11:28:50.092939" elapsed="0.000000"/>
+<status status="PASS" start="2024-08-13T11:41:07.567912" elapsed="0.000000"/>
 </kw>
 <kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-08-13T11:28:50.092939" level="INFO">${EMPTY_BROWSER} = about:blank</msg>
+<msg time="2024-08-13T11:41:07.567912" level="INFO">${EMPTY_BROWSER} = about:blank</msg>
 <arg>${EMPTY_BROWSER}</arg>
 <arg>${empty_browser}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-08-13T11:28:50.092939" elapsed="0.000000"/>
+<status status="PASS" start="2024-08-13T11:41:07.567912" elapsed="0.000000"/>
 </kw>
 <kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-08-13T11:28:50.093939" level="INFO">${BROWSER} = chrome</msg>
-<arg>${BROWSER}</arg>
-<arg>${browser}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-08-13T11:28:50.092939" elapsed="0.001000"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-08-13T11:28:50.093939" level="INFO">${START_URL} = https://www.trendyol.com/butik/liste/2/erkek</msg>
+<msg time="2024-08-13T11:41:07.567912" level="INFO">${START_URL} = https://www.trendyol.com/butik/liste/2/erkek</msg>
 <arg>${START_URL}</arg>
 <arg>${start_url}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-08-13T11:28:50.093939" elapsed="0.000000"/>
+<status status="PASS" start="2024-08-13T11:41:07.567912" elapsed="0.001000"/>
 </kw>
 <kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-08-13T11:28:50.093939" level="INFO">${SEARCH_TERM} = Versele Laga Muhabbet Kuşu Yemi</msg>
+<msg time="2024-08-13T11:41:07.568912" level="INFO">${SEARCH_TERM} = Versele Laga Muhabbet Kuşu Yemi</msg>
 <arg>${SEARCH_TERM}</arg>
 <arg>${search_term}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-08-13T11:28:50.093939" elapsed="0.000000"/>
+<status status="PASS" start="2024-08-13T11:41:07.568912" elapsed="0.000000"/>
 </kw>
 <kw name="Get Search Term 1" owner="SearchTermLib">
-<msg time="2024-08-13T11:28:50.093939" level="INFO">${searchTerms[0]} = Versele Laga Muhabbet Kuşu Yemi</msg>
+<msg time="2024-08-13T11:41:07.568912" level="INFO">${searchTerms[0]} = Versele Laga Muhabbet Kuşu Yemi</msg>
 <var>${searchTerms[0]}</var>
-<status status="PASS" start="2024-08-13T11:28:50.093939" elapsed="0.000000"/>
+<status status="PASS" start="2024-08-13T11:41:07.568912" elapsed="0.000000"/>
 </kw>
 <kw name="Get Search Term 2" owner="SearchTermLib">
-<msg time="2024-08-13T11:28:50.094940" level="INFO">${searchTerms[1]} = Gillette Sensor3 Tıraş Makinesi</msg>
+<msg time="2024-08-13T11:41:07.568912" level="INFO">${searchTerms[1]} = Gillette Sensor3 Tıraş Makinesi</msg>
 <var>${searchTerms[1]}</var>
-<status status="PASS" start="2024-08-13T11:28:50.094940" elapsed="0.000000"/>
+<status status="PASS" start="2024-08-13T11:41:07.568912" elapsed="0.000000"/>
 </kw>
 <kw name="Get Search Term 3" owner="SearchTermLib">
-<msg time="2024-08-13T11:28:50.094940" level="INFO">${searchTerms[2]} = The Ceel Arındırıcı ve Aydınlatıcı Yüz Peelingi Beluga Havyarı Özlü Coenzyme Q10 100 ml</msg>
+<msg time="2024-08-13T11:41:07.569913" level="INFO">${searchTerms[2]} = The Ceel Arındırıcı ve Aydınlatıcı Yüz Peelingi Beluga Havyarı Özlü Coenzyme Q10 100 ml</msg>
 <var>${searchTerms[2]}</var>
-<status status="PASS" start="2024-08-13T11:28:50.094940" elapsed="0.000000"/>
+<status status="PASS" start="2024-08-13T11:41:07.568912" elapsed="0.001001"/>
 </kw>
 <kw name="Get Search Term 4" owner="SearchTermLib">
-<msg time="2024-08-13T11:28:50.094940" level="INFO">${searchTerms[3]} = Zippo</msg>
+<msg time="2024-08-13T11:41:07.569913" level="INFO">${searchTerms[3]} = Zippo</msg>
 <var>${searchTerms[3]}</var>
-<status status="PASS" start="2024-08-13T11:28:50.094940" elapsed="0.000000"/>
+<status status="PASS" start="2024-08-13T11:41:07.569913" elapsed="0.000000"/>
 </kw>
 <kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-08-13T11:28:50.094940" level="INFO">${SEARCH_TERMS[0]} = Versele Laga Muhabbet Kuşu Yemi</msg>
+<msg time="2024-08-13T11:41:07.569913" level="INFO">${SEARCH_TERMS[0]} = Versele Laga Muhabbet Kuşu Yemi</msg>
 <arg>${SEARCH_TERMS[0]}</arg>
 <arg>${searchTerms[0]}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-08-13T11:28:50.094940" elapsed="0.000000"/>
+<status status="PASS" start="2024-08-13T11:41:07.569913" elapsed="0.000000"/>
 </kw>
 <kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-08-13T11:28:50.095940" level="INFO">${SEARCH_TERMS[1]} = Gillette Sensor3 Tıraş Makinesi</msg>
+<msg time="2024-08-13T11:41:07.569913" level="INFO">${SEARCH_TERMS[1]} = Gillette Sensor3 Tıraş Makinesi</msg>
 <arg>${SEARCH_TERMS[1]}</arg>
 <arg>${searchTerms[1]}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-08-13T11:28:50.095940" elapsed="0.000000"/>
+<status status="PASS" start="2024-08-13T11:41:07.569913" elapsed="0.000000"/>
 </kw>
 <kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-08-13T11:28:50.095940" level="INFO">${SEARCH_TERMS[2]} = The Ceel Arındırıcı ve Aydınlatıcı Yüz Peelingi Beluga Havyarı Özlü Coenzyme Q10 100 ml</msg>
+<msg time="2024-08-13T11:41:07.570913" level="INFO">${SEARCH_TERMS[2]} = The Ceel Arındırıcı ve Aydınlatıcı Yüz Peelingi Beluga Havyarı Özlü Coenzyme Q10 100 ml</msg>
 <arg>${SEARCH_TERMS[2]}</arg>
 <arg>${searchTerms[2]}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-08-13T11:28:50.095940" elapsed="0.000000"/>
+<status status="PASS" start="2024-08-13T11:41:07.569913" elapsed="0.001000"/>
 </kw>
 <kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-08-13T11:28:50.095940" level="INFO">${SEARCH_TERMS[3]} = Zippo</msg>
+<msg time="2024-08-13T11:41:07.570913" level="INFO">${SEARCH_TERMS[3]} = Zippo</msg>
 <arg>${SEARCH_TERMS[3]}</arg>
 <arg>${searchTerms[3]}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-08-13T11:28:50.095940" elapsed="0.000000"/>
+<status status="PASS" start="2024-08-13T11:41:07.570913" elapsed="0.000000"/>
 </kw>
 <kw name="Create List" owner="BuiltIn">
-<msg time="2024-08-13T11:28:50.096940" level="INFO">@{searchTerms} = [ Versele Laga Muhabbet Kuşu Yemi | Gillette Sensor3 Tıraş Makinesi | The Ceel Arındırıcı ve Aydınlatıcı Yüz Peelingi Beluga Havyarı Özlü Coenzyme Q10 100 ml | Zippo ]</msg>
+<msg time="2024-08-13T11:41:07.570913" level="INFO">@{searchTerms} = [ Versele Laga Muhabbet Kuşu Yemi | Gillette Sensor3 Tıraş Makinesi | The Ceel Arındırıcı ve Aydınlatıcı Yüz Peelingi Beluga Havyarı Özlü Coenzyme Q10 100 ml | Zippo ]</msg>
 <var>@{searchTerms}</var>
 <arg>${searchTerms[0]}</arg>
 <arg>${searchTerms[1]}</arg>
 <arg>${searchTerms[2]}</arg>
 <arg>${searchTerms[3]}</arg>
 <doc>Returns a list containing given items.</doc>
-<status status="PASS" start="2024-08-13T11:28:50.095940" elapsed="0.001000"/>
+<status status="PASS" start="2024-08-13T11:41:07.570913" elapsed="0.000000"/>
 </kw>
 <kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-08-13T11:28:50.096940" level="INFO">@{SEARCH_TERMS} = [ Versele Laga Muhabbet Kuşu Yemi | Gillette Sensor3 Tıraş Makinesi | The Ceel Arındırıcı ve Aydınlatıcı Yüz Peelingi Beluga Havyarı Özlü Coenzyme Q10 100 ml | Zippo ]</msg>
+<msg time="2024-08-13T11:41:07.571913" level="INFO">@{SEARCH_TERMS} = [ Versele Laga Muhabbet Kuşu Yemi | Gillette Sensor3 Tıraş Makinesi | The Ceel Arındırıcı ve Aydınlatıcı Yüz Peelingi Beluga Havyarı Özlü Coenzyme Q10 100 ml | Zippo ]</msg>
 <arg>@SEARCH_TERMS</arg>
 <arg>@{searchTerms}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-08-13T11:28:50.096940" elapsed="0.000000"/>
+<status status="PASS" start="2024-08-13T11:41:07.570913" elapsed="0.001000"/>
 </kw>
 <kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-08-13T11:28:50.096940" level="INFO">${SEARCH_TERM} = Versele Laga Muhabbet Kuşu Yemi</msg>
+<msg time="2024-08-13T11:41:07.571913" level="INFO">${SEARCH_TERM} = Versele Laga Muhabbet Kuşu Yemi</msg>
 <arg>${SEARCH_TERM}</arg>
 <arg>${SEARCH_TERMS[${TERM}]}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-08-13T11:28:50.096940" elapsed="0.000000"/>
+<status status="PASS" start="2024-08-13T11:41:07.571913" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-08-13T11:28:50.089938" elapsed="0.007002"/>
+<status status="PASS" start="2024-08-13T11:41:07.564912" elapsed="0.007001"/>
 </kw>
 <kw name="Set Selenium Speed" owner="SeleniumLibrary">
 <arg>.02s</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2024-08-13T11:28:50.096940" elapsed="0.001000"/>
+<status status="PASS" start="2024-08-13T11:41:07.571913" elapsed="0.000000"/>
 </kw>
 <kw name="Set Selenium Timeout" owner="SeleniumLibrary">
 <arg>10s</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" start="2024-08-13T11:28:50.097940" elapsed="0.000000"/>
+<status status="PASS" start="2024-08-13T11:41:07.571913" elapsed="0.001001"/>
 </kw>
 <kw name="Begin Web Test" owner="Common">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:28:50.097940" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<msg time="2024-08-13T11:41:07.572914" level="INFO">Opening browser 'firefox' to base url 'about:blank'.</msg>
 <arg>${EMPTY_BROWSER}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-08-13T11:28:50.097940" elapsed="3.540989"/>
+<status status="PASS" start="2024-08-13T11:41:07.572914" elapsed="7.885434"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-08-13T11:28:53.638929" elapsed="0.060016"/>
+<status status="PASS" start="2024-08-13T11:41:15.458348" elapsed="0.283880"/>
 </kw>
 <arg>${EMPTY_BROWSER}</arg>
 <arg>${BROWSER}</arg>
-<status status="PASS" start="2024-08-13T11:28:50.097940" elapsed="3.601005"/>
+<status status="PASS" start="2024-08-13T11:41:07.572914" elapsed="8.169314"/>
 </kw>
 <arg>${EMPTY_BROWSER}</arg>
 <arg>${BROWSER}</arg>
-<status status="PASS" start="2024-08-13T11:28:50.089938" elapsed="3.609007"/>
+<status status="PASS" start="2024-08-13T11:41:07.564912" elapsed="8.177316"/>
 </kw>
 <test id="s1-t1" name="Should not be able to Invalid Logins" line="47">
 <kw name="Get CSV Data" owner="DataManager">
 <kw name="Read Csv File" owner="Csv">
-<msg time="2024-08-13T11:28:53.700451" level="INFO">${Data} = [['ab_tarim@hotmail.com', ' password', 'E-posta adresiniz ve/veya şifreniz hatalı.'], ['email', ' @bt100Sx1', 'Lütfen geçerli bir e-posta adresi giriniz.'], ['ab_tarim@hotmail.com', '', 'Lütfen şifren...</msg>
+<msg time="2024-08-13T11:41:15.743230" level="INFO">${Data} = [['ab_tarim@hotmail.com', ' password', 'E-posta adresiniz ve/veya şifreniz hatalı.'], ['email', ' @bt100Sx1', 'Lütfen geçerli bir e-posta adresi giriniz.'], ['ab_tarim@hotmail.com', '', 'Lütfen şifren...</msg>
 <var>${Data}</var>
 <arg>${FileName}</arg>
-<status status="PASS" start="2024-08-13T11:28:53.699449" elapsed="0.001002"/>
+<status status="PASS" start="2024-08-13T11:41:15.743230" elapsed="0.000000"/>
 </kw>
 <return>
 <value>${Data}</value>
-<status status="PASS" start="2024-08-13T11:28:53.700451" elapsed="0.000000"/>
+<status status="PASS" start="2024-08-13T11:41:15.743230" elapsed="0.000000"/>
 </return>
-<msg time="2024-08-13T11:28:53.700451" level="INFO">@{InvalidLoginScenarios} = [ ['ab_tarim@hotmail.com', ' password', 'E-posta adresiniz ve/veya şifreniz hatalı.'] | ['email', ' @bt100Sx1', 'Lütfen geçerli bir e-posta adresi giriniz.'] | ['ab_tarim@hotmail.com', '', 'Lütfen şif...</msg>
+<msg time="2024-08-13T11:41:15.743230" level="INFO">@{InvalidLoginScenarios} = [ ['ab_tarim@hotmail.com', ' password', 'E-posta adresiniz ve/veya şifreniz hatalı.'] | ['email', ' @bt100Sx1', 'Lütfen geçerli bir e-posta adresi giriniz.'] | ['ab_tarim@hotmail.com', '', 'Lütfen şif...</msg>
 <var>@{InvalidLoginScenarios}</var>
 <arg>${INVALID_CREDENTIALS_FILE_CSV}</arg>
-<status status="PASS" start="2024-08-13T11:28:53.699449" elapsed="0.001002"/>
+<status status="PASS" start="2024-08-13T11:41:15.742228" elapsed="0.001002"/>
 </kw>
 <kw name="Login with Many Invalid Credentials" owner="TrendyolApp">
 <for flavor="IN">
@@ -203,61 +191,73 @@
 <kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
 <kw name="Navigate To Sign In Page" owner="TrendyolApp">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:28:53.701451" level="INFO">Opening url 'https://www.trendyol.com/giris?cb=%2F'</msg>
+<msg time="2024-08-13T11:41:15.745230" level="INFO">Opening url 'https://www.trendyol.com/giris?cb=%2F'</msg>
 <arg>https://www.trendyol.com/giris?cb=%2F</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-08-13T11:28:53.701451" elapsed="1.333531"/>
+<status status="PASS" start="2024-08-13T11:41:15.745230" elapsed="1.674979"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-13T11:41:17.720531" level="INFO">Slept 300 milliseconds.</msg>
+<arg>.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-13T11:41:17.420209" elapsed="0.300322"/>
 </kw>
 <kw name="Correct login page loads" owner="TrendyolApp">
 <kw name="Verify Page Loaded" owner="LogIn">
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:28:55.065998" level="INFO">Current page contains element 'css = .mr-5'.</msg>
+<msg time="2024-08-13T11:41:17.751461" level="INFO">Current page contains element 'css = .mr-5'.</msg>
 <arg>${SIGNIN_PAGE_VERIFIER_HEADING}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-08-13T11:28:55.035486" elapsed="0.030512"/>
+<status status="PASS" start="2024-08-13T11:41:17.720531" elapsed="0.030930"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:28:55.065998" level="INFO">Verifying element 'css = .mr-5' contains exact text 'Giriş Yap'.</msg>
+<msg time="2024-08-13T11:41:17.751965" level="INFO">Verifying element 'css = .mr-5' contains exact text 'Giriş Yap'.</msg>
 <arg>${SIGNIN_PAGE_VERIFIER_HEADING}</arg>
 <arg>Giriş Yap</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-08-13T11:28:55.065998" elapsed="0.062338"/>
+<status status="PASS" start="2024-08-13T11:41:17.751965" elapsed="0.050003"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:28:55.159863" level="INFO">Current page contains element 'xpath = //label[.='E-Posta']'.</msg>
+<msg time="2024-08-13T11:41:17.825611" level="INFO">Current page contains element 'xpath = //label[.='E-Posta']'.</msg>
 <arg>${SIGNIN_PAGE_VERIFIER_ELEMENTS_1}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-08-13T11:28:55.128336" elapsed="0.031527"/>
+<status status="PASS" start="2024-08-13T11:41:17.801968" elapsed="0.023643"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:28:55.159863" level="INFO">Verifying element 'xpath = //label[.='E-Posta']' contains exact text 'E-Posta'.</msg>
+<msg time="2024-08-13T11:41:17.825611" level="INFO">Verifying element 'xpath = //label[.='E-Posta']' contains exact text 'E-Posta'.</msg>
 <arg>${SIGNIN_PAGE_VERIFIER_ELEMENTS_1}</arg>
 <arg>E-Posta</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-08-13T11:28:55.159863" elapsed="0.053049"/>
+<status status="PASS" start="2024-08-13T11:41:17.825611" elapsed="0.051222"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:28:55.241932" level="INFO">Current page contains element 'xpath = //label[.='Şifre']'.</msg>
+<msg time="2024-08-13T11:41:17.900327" level="INFO">Current page contains element 'xpath = //label[.='Şifre']'.</msg>
 <arg>${SIGNIN_PAGE_VERIFIER_ELEMENTS_2}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-08-13T11:28:55.212912" elapsed="0.029020"/>
+<status status="PASS" start="2024-08-13T11:41:17.876833" elapsed="0.023494"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:28:55.242436" level="INFO">Verifying element 'xpath = //label[.='Şifre']' contains exact text 'Şifre'.</msg>
+<msg time="2024-08-13T11:41:17.900327" level="INFO">Verifying element 'xpath = //label[.='Şifre']' contains exact text 'Şifre'.</msg>
 <arg>${SIGNIN_PAGE_VERIFIER_ELEMENTS_2}</arg>
 <arg>Şifre</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-08-13T11:28:55.241932" elapsed="0.053192"/>
+<status status="PASS" start="2024-08-13T11:41:17.900327" elapsed="0.049020"/>
 </kw>
-<status status="PASS" start="2024-08-13T11:28:55.035486" elapsed="0.259638"/>
+<status status="PASS" start="2024-08-13T11:41:17.720531" elapsed="0.228816"/>
 </kw>
-<status status="PASS" start="2024-08-13T11:28:55.034982" elapsed="0.260142"/>
+<status status="PASS" start="2024-08-13T11:41:17.720531" elapsed="0.228816"/>
 </kw>
-<status status="PASS" start="2024-08-13T11:28:53.701451" elapsed="1.593673"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-13T11:41:18.849785" level="INFO">Slept 900 milliseconds.</msg>
+<arg>.9s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-13T11:41:17.949347" elapsed="0.900438"/>
+</kw>
+<status status="PASS" start="2024-08-13T11:41:15.744229" elapsed="3.105556"/>
 </kw>
 <arg>Navigate To Sign In Page</arg>
 <doc>Runs the keyword and continues execution even if a failure occurs.</doc>
-<status status="PASS" start="2024-08-13T11:28:53.701451" elapsed="1.593673"/>
+<status status="PASS" start="2024-08-13T11:41:15.744229" elapsed="3.105556"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
 <kw name="Attempt Login" owner="TrendyolApp">
@@ -265,135 +265,147 @@
 <kw name="Clear Element Text" owner="SeleniumLibrary">
 <arg>${USER_EMAIL_ELEMENT}</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-13T11:28:55.296127" elapsed="0.071556"/>
+<status status="PASS" start="2024-08-13T11:41:18.850788" elapsed="0.047524"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:28:55.368684" level="INFO">Typing text 'ab_tarim@hotmail.com' into text field 'xpath=//*[@id="login-email"]'.</msg>
+<msg time="2024-08-13T11:41:18.899313" level="INFO">Typing text 'ab_tarim@hotmail.com' into text field 'xpath=//*[@id="login-email"]'.</msg>
 <arg>${USER_EMAIL_ELEMENT}</arg>
 <arg>${LoginScenario[0]}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-13T11:28:55.367683" elapsed="0.126788"/>
+<status status="PASS" start="2024-08-13T11:41:18.898312" elapsed="0.104824"/>
 </kw>
 <kw name="Clear Element Text" owner="SeleniumLibrary">
 <arg>${USER_PASSWORD_ELEMENT}</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-13T11:28:55.494471" elapsed="0.064590"/>
+<status status="PASS" start="2024-08-13T11:41:19.003136" elapsed="0.046520"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:28:55.559061" level="INFO">Typing text ' password' into text field 'xpath=//*[@id="login-password-input"]'.</msg>
+<msg time="2024-08-13T11:41:19.049656" level="INFO">Typing text ' password' into text field 'xpath=//*[@id="login-password-input"]'.</msg>
 <arg>${USER_PASSWORD_ELEMENT}</arg>
 <arg>${LoginScenario[1]}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-13T11:28:55.559061" elapsed="0.112581"/>
+<status status="PASS" start="2024-08-13T11:41:19.049656" elapsed="0.086601"/>
 </kw>
 <arg>${LoginScenario}</arg>
-<status status="PASS" start="2024-08-13T11:28:55.296127" elapsed="0.375515"/>
+<status status="PASS" start="2024-08-13T11:41:18.849785" elapsed="0.286472"/>
 </kw>
 <kw name="Click Submit Button" owner="LogIn">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:28:55.672644" level="INFO">Clicking button 'xpath=//button[@class='q-primary q-fluid q-button-medium q-button submit']'.</msg>
+<msg time="2024-08-13T11:41:19.137259" level="INFO">Clicking button 'xpath=//button[@class='q-primary q-fluid q-button-medium q-button submit']'.</msg>
 <arg>${SUBMIT_BUTTON}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-13T11:28:55.671642" elapsed="0.164177"/>
+<status status="PASS" start="2024-08-13T11:41:19.136257" elapsed="0.337572"/>
 </kw>
-<status status="PASS" start="2024-08-13T11:28:55.671642" elapsed="0.164177"/>
+<status status="PASS" start="2024-08-13T11:41:19.136257" elapsed="0.337572"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-08-13T11:28:56.335843" level="INFO">Slept 500 milliseconds.</msg>
+<msg time="2024-08-13T11:41:19.974361" level="INFO">Slept 500 milliseconds.</msg>
 <arg>.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-08-13T11:28:55.835819" elapsed="0.500024"/>
+<status status="PASS" start="2024-08-13T11:41:19.473829" elapsed="0.500532"/>
 </kw>
 <arg>${LoginScenario}</arg>
-<status status="PASS" start="2024-08-13T11:28:55.295124" elapsed="1.040719"/>
+<status status="PASS" start="2024-08-13T11:41:18.849785" elapsed="1.124576"/>
 </kw>
 <arg>Attempt Login</arg>
 <arg>${LoginScenario}</arg>
 <doc>Runs the keyword and continues execution even if a failure occurs.</doc>
-<status status="PASS" start="2024-08-13T11:28:55.295124" elapsed="1.040719"/>
+<status status="PASS" start="2024-08-13T11:41:18.849785" elapsed="1.124576"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
 <kw name="Verify Login Page Error Message" owner="TrendyolApp">
 <kw name="Verify Error Message" owner="LogIn">
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:28:56.391039" level="INFO">Current page contains text 'E-posta adresiniz ve/veya şifreniz hatalı.'.</msg>
+<msg time="2024-08-13T11:41:20.023522" level="INFO">Current page contains text 'E-posta adresiniz ve/veya şifreniz hatalı.'.</msg>
 <arg>${LoginScenario[2]}</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-08-13T11:28:56.336845" elapsed="0.054194"/>
+<status status="PASS" start="2024-08-13T11:41:19.975374" elapsed="0.048148"/>
 </kw>
 <arg>${LoginScenario}</arg>
-<status status="PASS" start="2024-08-13T11:28:56.336845" elapsed="0.054194"/>
+<status status="PASS" start="2024-08-13T11:41:19.975374" elapsed="0.048148"/>
 </kw>
 <arg>${LoginScenario}</arg>
-<status status="PASS" start="2024-08-13T11:28:56.335843" elapsed="0.055196"/>
+<status status="PASS" start="2024-08-13T11:41:19.974361" elapsed="0.049161"/>
 </kw>
 <arg>Verify Login Page Error Message</arg>
 <arg>${LoginScenario}</arg>
 <doc>Runs the keyword and continues execution even if a failure occurs.</doc>
-<status status="PASS" start="2024-08-13T11:28:56.335843" elapsed="0.055196"/>
+<status status="PASS" start="2024-08-13T11:41:19.974361" elapsed="0.049161"/>
 </kw>
 <var name="${LoginScenario}">['ab_tarim@hotmail.com', ' password', 'E-posta adresiniz ve/veya şifreniz hatalı.']</var>
-<status status="PASS" start="2024-08-13T11:28:53.701451" elapsed="2.689588"/>
+<status status="PASS" start="2024-08-13T11:41:15.744229" elapsed="4.279293"/>
 </iter>
 <iter>
 <kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
 <kw name="Navigate To Sign In Page" owner="TrendyolApp">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:28:56.392041" level="INFO">Opening url 'https://www.trendyol.com/giris?cb=%2F'</msg>
+<msg time="2024-08-13T11:41:20.023522" level="INFO">Opening url 'https://www.trendyol.com/giris?cb=%2F'</msg>
 <arg>https://www.trendyol.com/giris?cb=%2F</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-08-13T11:28:56.392041" elapsed="2.473462"/>
+<status status="PASS" start="2024-08-13T11:41:20.023522" elapsed="1.577907"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-13T11:41:21.901706" level="INFO">Slept 300 milliseconds.</msg>
+<arg>.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-13T11:41:21.601429" elapsed="0.300277"/>
 </kw>
 <kw name="Correct login page loads" owner="TrendyolApp">
 <kw name="Verify Page Loaded" owner="LogIn">
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:28:58.899926" level="INFO">Current page contains element 'css = .mr-5'.</msg>
+<msg time="2024-08-13T11:41:21.925721" level="INFO">Current page contains element 'css = .mr-5'.</msg>
 <arg>${SIGNIN_PAGE_VERIFIER_HEADING}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-08-13T11:28:58.865503" elapsed="0.034423"/>
+<status status="PASS" start="2024-08-13T11:41:21.902210" elapsed="0.023511"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:28:58.899926" level="INFO">Verifying element 'css = .mr-5' contains exact text 'Giriş Yap'.</msg>
+<msg time="2024-08-13T11:41:21.925721" level="INFO">Verifying element 'css = .mr-5' contains exact text 'Giriş Yap'.</msg>
 <arg>${SIGNIN_PAGE_VERIFIER_HEADING}</arg>
 <arg>Giriş Yap</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-08-13T11:28:58.899926" elapsed="0.051537"/>
+<status status="PASS" start="2024-08-13T11:41:21.925721" elapsed="0.051544"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:28:58.977473" level="INFO">Current page contains element 'xpath = //label[.='E-Posta']'.</msg>
+<msg time="2024-08-13T11:41:22.001723" level="INFO">Current page contains element 'xpath = //label[.='E-Posta']'.</msg>
 <arg>${SIGNIN_PAGE_VERIFIER_ELEMENTS_1}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-08-13T11:28:58.951463" elapsed="0.026010"/>
+<status status="PASS" start="2024-08-13T11:41:21.977265" elapsed="0.024458"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:28:58.977978" level="INFO">Verifying element 'xpath = //label[.='E-Posta']' contains exact text 'E-Posta'.</msg>
+<msg time="2024-08-13T11:41:22.001723" level="INFO">Verifying element 'xpath = //label[.='E-Posta']' contains exact text 'E-Posta'.</msg>
 <arg>${SIGNIN_PAGE_VERIFIER_ELEMENTS_1}</arg>
 <arg>E-Posta</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-08-13T11:28:58.977473" elapsed="0.052024"/>
+<status status="PASS" start="2024-08-13T11:41:22.001723" elapsed="0.050025"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:28:59.057019" level="INFO">Current page contains element 'xpath = //label[.='Şifre']'.</msg>
+<msg time="2024-08-13T11:41:22.075266" level="INFO">Current page contains element 'xpath = //label[.='Şifre']'.</msg>
 <arg>${SIGNIN_PAGE_VERIFIER_ELEMENTS_2}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-08-13T11:28:59.029497" elapsed="0.027522"/>
+<status status="PASS" start="2024-08-13T11:41:22.051748" elapsed="0.023518"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:28:59.057019" level="INFO">Verifying element 'xpath = //label[.='Şifre']' contains exact text 'Şifre'.</msg>
+<msg time="2024-08-13T11:41:22.075769" level="INFO">Verifying element 'xpath = //label[.='Şifre']' contains exact text 'Şifre'.</msg>
 <arg>${SIGNIN_PAGE_VERIFIER_ELEMENTS_2}</arg>
 <arg>Şifre</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-08-13T11:28:59.057019" elapsed="0.051741"/>
+<status status="PASS" start="2024-08-13T11:41:22.075266" elapsed="0.048800"/>
 </kw>
-<status status="PASS" start="2024-08-13T11:28:58.865503" elapsed="0.243257"/>
+<status status="PASS" start="2024-08-13T11:41:21.902210" elapsed="0.221856"/>
 </kw>
-<status status="PASS" start="2024-08-13T11:28:58.865503" elapsed="0.243257"/>
+<status status="PASS" start="2024-08-13T11:41:21.902210" elapsed="0.221856"/>
 </kw>
-<status status="PASS" start="2024-08-13T11:28:56.391039" elapsed="2.717721"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-13T11:41:23.024149" level="INFO">Slept 900 milliseconds.</msg>
+<arg>.9s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-13T11:41:22.124066" elapsed="0.900083"/>
+</kw>
+<status status="PASS" start="2024-08-13T11:41:20.023522" elapsed="3.000627"/>
 </kw>
 <arg>Navigate To Sign In Page</arg>
 <doc>Runs the keyword and continues execution even if a failure occurs.</doc>
-<status status="PASS" start="2024-08-13T11:28:56.391039" elapsed="2.717721"/>
+<status status="PASS" start="2024-08-13T11:41:20.023522" elapsed="3.000627"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
 <kw name="Attempt Login" owner="TrendyolApp">
@@ -401,135 +413,147 @@
 <kw name="Clear Element Text" owner="SeleniumLibrary">
 <arg>${USER_EMAIL_ELEMENT}</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-13T11:28:59.109761" elapsed="0.062056"/>
+<status status="PASS" start="2024-08-13T11:41:23.025150" elapsed="0.046540"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:28:59.172321" level="INFO">Typing text 'email' into text field 'xpath=//*[@id="login-email"]'.</msg>
+<msg time="2024-08-13T11:41:23.071690" level="INFO">Typing text 'email' into text field 'xpath=//*[@id="login-email"]'.</msg>
 <arg>${USER_EMAIL_ELEMENT}</arg>
 <arg>${LoginScenario[0]}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-13T11:28:59.171817" elapsed="0.106642"/>
+<status status="PASS" start="2024-08-13T11:41:23.071690" elapsed="0.078550"/>
 </kw>
 <kw name="Clear Element Text" owner="SeleniumLibrary">
 <arg>${USER_PASSWORD_ELEMENT}</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-13T11:28:59.278459" elapsed="0.062728"/>
+<status status="PASS" start="2024-08-13T11:41:23.150240" elapsed="0.045984"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:28:59.341187" level="INFO">Typing text ' @bt100Sx1' into text field 'xpath=//*[@id="login-password-input"]'.</msg>
+<msg time="2024-08-13T11:41:23.197226" level="INFO">Typing text ' @bt100Sx1' into text field 'xpath=//*[@id="login-password-input"]'.</msg>
 <arg>${USER_PASSWORD_ELEMENT}</arg>
 <arg>${LoginScenario[1]}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-13T11:28:59.341187" elapsed="0.124649"/>
+<status status="PASS" start="2024-08-13T11:41:23.196224" elapsed="0.077591"/>
 </kw>
 <arg>${LoginScenario}</arg>
-<status status="PASS" start="2024-08-13T11:28:59.109761" elapsed="0.356075"/>
+<status status="PASS" start="2024-08-13T11:41:23.025150" elapsed="0.248665"/>
 </kw>
 <kw name="Click Submit Button" owner="LogIn">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:28:59.466338" level="INFO">Clicking button 'xpath=//button[@class='q-primary q-fluid q-button-medium q-button submit']'.</msg>
+<msg time="2024-08-13T11:41:23.274817" level="INFO">Clicking button 'xpath=//button[@class='q-primary q-fluid q-button-medium q-button submit']'.</msg>
 <arg>${SUBMIT_BUTTON}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-13T11:28:59.466338" elapsed="0.146756"/>
+<status status="PASS" start="2024-08-13T11:41:23.273815" elapsed="0.324432"/>
 </kw>
-<status status="PASS" start="2024-08-13T11:28:59.465836" elapsed="0.147258"/>
+<status status="PASS" start="2024-08-13T11:41:23.273815" elapsed="0.324432"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-08-13T11:29:00.114094" level="INFO">Slept 500 milliseconds.</msg>
+<msg time="2024-08-13T11:41:24.098548" level="INFO">Slept 500 milliseconds.</msg>
 <arg>.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-08-13T11:28:59.613094" elapsed="0.501000"/>
+<status status="PASS" start="2024-08-13T11:41:23.598247" elapsed="0.500301"/>
 </kw>
 <arg>${LoginScenario}</arg>
-<status status="PASS" start="2024-08-13T11:28:59.109761" elapsed="1.004836"/>
+<status status="PASS" start="2024-08-13T11:41:23.024149" elapsed="1.074399"/>
 </kw>
 <arg>Attempt Login</arg>
 <arg>${LoginScenario}</arg>
 <doc>Runs the keyword and continues execution even if a failure occurs.</doc>
-<status status="PASS" start="2024-08-13T11:28:59.108760" elapsed="1.005837"/>
+<status status="PASS" start="2024-08-13T11:41:23.024149" elapsed="1.074399"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
 <kw name="Verify Login Page Error Message" owner="TrendyolApp">
 <kw name="Verify Error Message" owner="LogIn">
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:29:00.171114" level="INFO">Current page contains text 'Lütfen geçerli bir e-posta adresi giriniz.'.</msg>
+<msg time="2024-08-13T11:41:24.147264" level="INFO">Current page contains text 'Lütfen geçerli bir e-posta adresi giriniz.'.</msg>
 <arg>${LoginScenario[2]}</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-08-13T11:29:00.114832" elapsed="0.056282"/>
+<status status="PASS" start="2024-08-13T11:41:24.099051" elapsed="0.048213"/>
 </kw>
 <arg>${LoginScenario}</arg>
-<status status="PASS" start="2024-08-13T11:29:00.114832" elapsed="0.056282"/>
+<status status="PASS" start="2024-08-13T11:41:24.099051" elapsed="0.048213"/>
 </kw>
 <arg>${LoginScenario}</arg>
-<status status="PASS" start="2024-08-13T11:29:00.114832" elapsed="0.056562"/>
+<status status="PASS" start="2024-08-13T11:41:24.099051" elapsed="0.048213"/>
 </kw>
 <arg>Verify Login Page Error Message</arg>
 <arg>${LoginScenario}</arg>
 <doc>Runs the keyword and continues execution even if a failure occurs.</doc>
-<status status="PASS" start="2024-08-13T11:29:00.114597" elapsed="0.056797"/>
+<status status="PASS" start="2024-08-13T11:41:24.099051" elapsed="0.048213"/>
 </kw>
 <var name="${LoginScenario}">['email', ' @bt100Sx1', 'Lütfen geçerli bir e-posta adresi giriniz.']</var>
-<status status="PASS" start="2024-08-13T11:28:56.391039" elapsed="3.780355"/>
+<status status="PASS" start="2024-08-13T11:41:20.023522" elapsed="4.123742"/>
 </iter>
 <iter>
 <kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
 <kw name="Navigate To Sign In Page" owner="TrendyolApp">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:29:00.171394" level="INFO">Opening url 'https://www.trendyol.com/giris?cb=%2F'</msg>
+<msg time="2024-08-13T11:41:24.148266" level="INFO">Opening url 'https://www.trendyol.com/giris?cb=%2F'</msg>
 <arg>https://www.trendyol.com/giris?cb=%2F</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-08-13T11:29:00.171394" elapsed="0.438909"/>
+<status status="PASS" start="2024-08-13T11:41:24.148266" elapsed="0.551635"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-13T11:41:24.999980" level="INFO">Slept 300 milliseconds.</msg>
+<arg>.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-13T11:41:24.699901" elapsed="0.300079"/>
 </kw>
 <kw name="Correct login page loads" owner="TrendyolApp">
 <kw name="Verify Page Loaded" owner="LogIn">
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:29:00.644361" level="INFO">Current page contains element 'css = .mr-5'.</msg>
+<msg time="2024-08-13T11:41:25.024490" level="INFO">Current page contains element 'css = .mr-5'.</msg>
 <arg>${SIGNIN_PAGE_VERIFIER_HEADING}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-08-13T11:29:00.610303" elapsed="0.034058"/>
+<status status="PASS" start="2024-08-13T11:41:24.999980" elapsed="0.024510"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:29:00.644865" level="INFO">Verifying element 'css = .mr-5' contains exact text 'Giriş Yap'.</msg>
+<msg time="2024-08-13T11:41:25.024490" level="INFO">Verifying element 'css = .mr-5' contains exact text 'Giriş Yap'.</msg>
 <arg>${SIGNIN_PAGE_VERIFIER_HEADING}</arg>
 <arg>Giriş Yap</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-08-13T11:29:00.644361" elapsed="0.051873"/>
+<status status="PASS" start="2024-08-13T11:41:25.024490" elapsed="0.050280"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:29:00.723239" level="INFO">Current page contains element 'xpath = //label[.='E-Posta']'.</msg>
+<msg time="2024-08-13T11:41:25.098804" level="INFO">Current page contains element 'xpath = //label[.='E-Posta']'.</msg>
 <arg>${SIGNIN_PAGE_VERIFIER_ELEMENTS_1}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-08-13T11:29:00.696234" elapsed="0.027005"/>
+<status status="PASS" start="2024-08-13T11:41:25.074770" elapsed="0.024034"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:29:00.723239" level="INFO">Verifying element 'xpath = //label[.='E-Posta']' contains exact text 'E-Posta'.</msg>
+<msg time="2024-08-13T11:41:25.098804" level="INFO">Verifying element 'xpath = //label[.='E-Posta']' contains exact text 'E-Posta'.</msg>
 <arg>${SIGNIN_PAGE_VERIFIER_ELEMENTS_1}</arg>
 <arg>E-Posta</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-08-13T11:29:00.723239" elapsed="0.052386"/>
+<status status="PASS" start="2024-08-13T11:41:25.098804" elapsed="0.049022"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:29:00.802317" level="INFO">Current page contains element 'xpath = //label[.='Şifre']'.</msg>
+<msg time="2024-08-13T11:41:25.171338" level="INFO">Current page contains element 'xpath = //label[.='Şifre']'.</msg>
 <arg>${SIGNIN_PAGE_VERIFIER_ELEMENTS_2}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-08-13T11:29:00.775625" elapsed="0.026692"/>
+<status status="PASS" start="2024-08-13T11:41:25.147826" elapsed="0.023512"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:29:00.802317" level="INFO">Verifying element 'xpath = //label[.='Şifre']' contains exact text 'Şifre'.</msg>
+<msg time="2024-08-13T11:41:25.171338" level="INFO">Verifying element 'xpath = //label[.='Şifre']' contains exact text 'Şifre'.</msg>
 <arg>${SIGNIN_PAGE_VERIFIER_ELEMENTS_2}</arg>
 <arg>Şifre</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-08-13T11:29:00.802317" elapsed="0.053539"/>
+<status status="PASS" start="2024-08-13T11:41:25.171338" elapsed="0.050071"/>
 </kw>
-<status status="PASS" start="2024-08-13T11:29:00.610303" elapsed="0.245553"/>
+<status status="PASS" start="2024-08-13T11:41:24.999980" elapsed="0.221429"/>
 </kw>
-<status status="PASS" start="2024-08-13T11:29:00.610303" elapsed="0.245553"/>
+<status status="PASS" start="2024-08-13T11:41:24.999980" elapsed="0.221429"/>
 </kw>
-<status status="PASS" start="2024-08-13T11:29:00.171394" elapsed="0.684462"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-13T11:41:26.122423" level="INFO">Slept 900 milliseconds.</msg>
+<arg>.9s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-13T11:41:25.221409" elapsed="0.901014"/>
+</kw>
+<status status="PASS" start="2024-08-13T11:41:24.147264" elapsed="1.975159"/>
 </kw>
 <arg>Navigate To Sign In Page</arg>
 <doc>Runs the keyword and continues execution even if a failure occurs.</doc>
-<status status="PASS" start="2024-08-13T11:29:00.171394" elapsed="0.684462"/>
+<status status="PASS" start="2024-08-13T11:41:24.147264" elapsed="1.975159"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
 <kw name="Attempt Login" owner="TrendyolApp">
@@ -537,135 +561,147 @@
 <kw name="Clear Element Text" owner="SeleniumLibrary">
 <arg>${USER_EMAIL_ELEMENT}</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-13T11:29:00.856360" elapsed="0.062054"/>
+<status status="PASS" start="2024-08-13T11:41:26.123424" elapsed="0.047534"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:29:00.918918" level="INFO">Typing text 'ab_tarim@hotmail.com' into text field 'xpath=//*[@id="login-email"]'.</msg>
+<msg time="2024-08-13T11:41:26.171461" level="INFO">Typing text 'ab_tarim@hotmail.com' into text field 'xpath=//*[@id="login-email"]'.</msg>
 <arg>${USER_EMAIL_ELEMENT}</arg>
 <arg>${LoginScenario[0]}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-13T11:29:00.918414" elapsed="0.118727"/>
+<status status="PASS" start="2024-08-13T11:41:26.170958" elapsed="0.090060"/>
 </kw>
 <kw name="Clear Element Text" owner="SeleniumLibrary">
 <arg>${USER_PASSWORD_ELEMENT}</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-13T11:29:01.037141" elapsed="0.066562"/>
+<status status="PASS" start="2024-08-13T11:41:26.261018" elapsed="0.046496"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:29:01.104705" level="INFO">Typing text '' into text field 'xpath=//*[@id="login-password-input"]'.</msg>
+<msg time="2024-08-13T11:41:26.308516" level="INFO">Typing text '' into text field 'xpath=//*[@id="login-password-input"]'.</msg>
 <arg>${USER_PASSWORD_ELEMENT}</arg>
 <arg>${LoginScenario[1]}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-13T11:29:01.103703" elapsed="0.106058"/>
+<status status="PASS" start="2024-08-13T11:41:26.307514" elapsed="0.074065"/>
 </kw>
 <arg>${LoginScenario}</arg>
-<status status="PASS" start="2024-08-13T11:29:00.856360" elapsed="0.353401"/>
+<status status="PASS" start="2024-08-13T11:41:26.123424" elapsed="0.258155"/>
 </kw>
 <kw name="Click Submit Button" owner="LogIn">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:29:01.210264" level="INFO">Clicking button 'xpath=//button[@class='q-primary q-fluid q-button-medium q-button submit']'.</msg>
+<msg time="2024-08-13T11:41:26.381579" level="INFO">Clicking button 'xpath=//button[@class='q-primary q-fluid q-button-medium q-button submit']'.</msg>
 <arg>${SUBMIT_BUTTON}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-13T11:29:01.210264" elapsed="0.145870"/>
+<status status="PASS" start="2024-08-13T11:41:26.381579" elapsed="0.336372"/>
 </kw>
-<status status="PASS" start="2024-08-13T11:29:01.209761" elapsed="0.146373"/>
+<status status="PASS" start="2024-08-13T11:41:26.381579" elapsed="0.336372"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-08-13T11:29:01.857124" level="INFO">Slept 500 milliseconds.</msg>
+<msg time="2024-08-13T11:41:27.217973" level="INFO">Slept 500 milliseconds.</msg>
 <arg>.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-08-13T11:29:01.356134" elapsed="0.500990"/>
+<status status="PASS" start="2024-08-13T11:41:26.717951" elapsed="0.500022"/>
 </kw>
 <arg>${LoginScenario}</arg>
-<status status="PASS" start="2024-08-13T11:29:00.856360" elapsed="1.000764"/>
+<status status="PASS" start="2024-08-13T11:41:26.122423" elapsed="1.095550"/>
 </kw>
 <arg>Attempt Login</arg>
 <arg>${LoginScenario}</arg>
 <doc>Runs the keyword and continues execution even if a failure occurs.</doc>
-<status status="PASS" start="2024-08-13T11:29:00.856360" elapsed="1.000764"/>
+<status status="PASS" start="2024-08-13T11:41:26.122423" elapsed="1.095550"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
 <kw name="Verify Login Page Error Message" owner="TrendyolApp">
 <kw name="Verify Error Message" owner="LogIn">
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:29:01.912821" level="INFO">Current page contains text 'Lütfen şifrenizi giriniz.'.</msg>
+<msg time="2024-08-13T11:41:27.266996" level="INFO">Current page contains text 'Lütfen şifrenizi giriniz.'.</msg>
 <arg>${LoginScenario[2]}</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-08-13T11:29:01.858126" elapsed="0.054695"/>
+<status status="PASS" start="2024-08-13T11:41:27.218974" elapsed="0.048022"/>
 </kw>
 <arg>${LoginScenario}</arg>
-<status status="PASS" start="2024-08-13T11:29:01.858126" elapsed="0.054695"/>
+<status status="PASS" start="2024-08-13T11:41:27.218974" elapsed="0.048022"/>
 </kw>
 <arg>${LoginScenario}</arg>
-<status status="PASS" start="2024-08-13T11:29:01.857124" elapsed="0.055697"/>
+<status status="PASS" start="2024-08-13T11:41:27.217973" elapsed="0.049023"/>
 </kw>
 <arg>Verify Login Page Error Message</arg>
 <arg>${LoginScenario}</arg>
 <doc>Runs the keyword and continues execution even if a failure occurs.</doc>
-<status status="PASS" start="2024-08-13T11:29:01.857124" elapsed="0.055697"/>
+<status status="PASS" start="2024-08-13T11:41:27.217973" elapsed="0.049023"/>
 </kw>
 <var name="${LoginScenario}">['ab_tarim@hotmail.com', '', 'Lütfen şifrenizi giriniz.']</var>
-<status status="PASS" start="2024-08-13T11:29:00.171394" elapsed="1.741427"/>
+<status status="PASS" start="2024-08-13T11:41:24.147264" elapsed="3.119732"/>
 </iter>
 <iter>
 <kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
 <kw name="Navigate To Sign In Page" owner="TrendyolApp">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:29:01.913823" level="INFO">Opening url 'https://www.trendyol.com/giris?cb=%2F'</msg>
+<msg time="2024-08-13T11:41:27.267997" level="INFO">Opening url 'https://www.trendyol.com/giris?cb=%2F'</msg>
 <arg>https://www.trendyol.com/giris?cb=%2F</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-08-13T11:29:01.913823" elapsed="0.413677"/>
+<status status="PASS" start="2024-08-13T11:41:27.267997" elapsed="0.513658"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-13T11:41:28.082166" level="INFO">Slept 300 milliseconds.</msg>
+<arg>.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-13T11:41:27.781655" elapsed="0.300511"/>
 </kw>
 <kw name="Correct login page loads" owner="TrendyolApp">
 <kw name="Verify Page Loaded" owner="LogIn">
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:29:02.359513" level="INFO">Current page contains element 'css = .mr-5'.</msg>
+<msg time="2024-08-13T11:41:28.106838" level="INFO">Current page contains element 'css = .mr-5'.</msg>
 <arg>${SIGNIN_PAGE_VERIFIER_HEADING}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-08-13T11:29:02.327500" elapsed="0.032013"/>
+<status status="PASS" start="2024-08-13T11:41:28.082166" elapsed="0.024672"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:29:02.359513" level="INFO">Verifying element 'css = .mr-5' contains exact text 'Giriş Yap'.</msg>
+<msg time="2024-08-13T11:41:28.106838" level="INFO">Verifying element 'css = .mr-5' contains exact text 'Giriş Yap'.</msg>
 <arg>${SIGNIN_PAGE_VERIFIER_HEADING}</arg>
 <arg>Giriş Yap</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-08-13T11:29:02.359513" elapsed="0.051716"/>
+<status status="PASS" start="2024-08-13T11:41:28.106838" elapsed="0.048995"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:29:02.437428" level="INFO">Current page contains element 'xpath = //label[.='E-Posta']'.</msg>
+<msg time="2024-08-13T11:41:28.179344" level="INFO">Current page contains element 'xpath = //label[.='E-Posta']'.</msg>
 <arg>${SIGNIN_PAGE_VERIFIER_ELEMENTS_1}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-08-13T11:29:02.411229" elapsed="0.026199"/>
+<status status="PASS" start="2024-08-13T11:41:28.155833" elapsed="0.023511"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:29:02.437931" level="INFO">Verifying element 'xpath = //label[.='E-Posta']' contains exact text 'E-Posta'.</msg>
+<msg time="2024-08-13T11:41:28.179344" level="INFO">Verifying element 'xpath = //label[.='E-Posta']' contains exact text 'E-Posta'.</msg>
 <arg>${SIGNIN_PAGE_VERIFIER_ELEMENTS_1}</arg>
 <arg>E-Posta</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-08-13T11:29:02.437428" elapsed="0.052546"/>
+<status status="PASS" start="2024-08-13T11:41:28.179344" elapsed="0.048545"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:29:02.516492" level="INFO">Current page contains element 'xpath = //label[.='Şifre']'.</msg>
+<msg time="2024-08-13T11:41:28.251073" level="INFO">Current page contains element 'xpath = //label[.='Şifre']'.</msg>
 <arg>${SIGNIN_PAGE_VERIFIER_ELEMENTS_2}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-08-13T11:29:02.489974" elapsed="0.026518"/>
+<status status="PASS" start="2024-08-13T11:41:28.227889" elapsed="0.023184"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:29:02.516492" level="INFO">Verifying element 'xpath = //label[.='Şifre']' contains exact text 'Şifre'.</msg>
+<msg time="2024-08-13T11:41:28.251073" level="INFO">Verifying element 'xpath = //label[.='Şifre']' contains exact text 'Şifre'.</msg>
 <arg>${SIGNIN_PAGE_VERIFIER_ELEMENTS_2}</arg>
 <arg>Şifre</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-08-13T11:29:02.516492" elapsed="0.052278"/>
+<status status="PASS" start="2024-08-13T11:41:28.251073" elapsed="0.048046"/>
 </kw>
-<status status="PASS" start="2024-08-13T11:29:02.327500" elapsed="0.241270"/>
+<status status="PASS" start="2024-08-13T11:41:28.082166" elapsed="0.216953"/>
 </kw>
-<status status="PASS" start="2024-08-13T11:29:02.327500" elapsed="0.241270"/>
+<status status="PASS" start="2024-08-13T11:41:28.082166" elapsed="0.216953"/>
 </kw>
-<status status="PASS" start="2024-08-13T11:29:01.913823" elapsed="0.654947"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-13T11:41:29.199268" level="INFO">Slept 900 milliseconds.</msg>
+<arg>.9s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-13T11:41:28.299119" elapsed="0.900149"/>
+</kw>
+<status status="PASS" start="2024-08-13T11:41:27.266996" elapsed="1.932272"/>
 </kw>
 <arg>Navigate To Sign In Page</arg>
 <doc>Runs the keyword and continues execution even if a failure occurs.</doc>
-<status status="PASS" start="2024-08-13T11:29:01.912821" elapsed="0.655949"/>
+<status status="PASS" start="2024-08-13T11:41:27.266996" elapsed="1.932272"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
 <kw name="Attempt Login" owner="TrendyolApp">
@@ -673,135 +709,147 @@
 <kw name="Clear Element Text" owner="SeleniumLibrary">
 <arg>${USER_EMAIL_ELEMENT}</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-13T11:29:02.569772" elapsed="0.062046"/>
+<status status="PASS" start="2024-08-13T11:41:29.200269" elapsed="0.048022"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:29:02.632820" level="INFO">Typing text '' into text field 'xpath=//*[@id="login-email"]'.</msg>
+<msg time="2024-08-13T11:41:29.249293" level="INFO">Typing text '' into text field 'xpath=//*[@id="login-email"]'.</msg>
 <arg>${USER_EMAIL_ELEMENT}</arg>
 <arg>${LoginScenario[0]}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-13T11:29:02.631818" elapsed="0.109572"/>
+<status status="PASS" start="2024-08-13T11:41:29.248291" elapsed="0.079032"/>
 </kw>
 <kw name="Clear Element Text" owner="SeleniumLibrary">
 <arg>${USER_PASSWORD_ELEMENT}</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-13T11:29:02.741390" elapsed="0.061702"/>
+<status status="PASS" start="2024-08-13T11:41:29.327323" elapsed="0.047022"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:29:02.803594" level="INFO">Typing text '@bt100Sx1' into text field 'xpath=//*[@id="login-password-input"]'.</msg>
+<msg time="2024-08-13T11:41:29.374849" level="INFO">Typing text '@bt100Sx1' into text field 'xpath=//*[@id="login-password-input"]'.</msg>
 <arg>${USER_PASSWORD_ELEMENT}</arg>
 <arg>${LoginScenario[1]}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-13T11:29:02.803092" elapsed="0.109582"/>
+<status status="PASS" start="2024-08-13T11:41:29.374345" elapsed="0.083741"/>
 </kw>
 <arg>${LoginScenario}</arg>
-<status status="PASS" start="2024-08-13T11:29:02.569772" elapsed="0.342902"/>
+<status status="PASS" start="2024-08-13T11:41:29.200269" elapsed="0.257817"/>
 </kw>
 <kw name="Click Submit Button" owner="LogIn">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:29:02.912674" level="INFO">Clicking button 'xpath=//button[@class='q-primary q-fluid q-button-medium q-button submit']'.</msg>
+<msg time="2024-08-13T11:41:29.458086" level="INFO">Clicking button 'xpath=//button[@class='q-primary q-fluid q-button-medium q-button submit']'.</msg>
 <arg>${SUBMIT_BUTTON}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-13T11:29:02.912674" elapsed="0.142938"/>
+<status status="PASS" start="2024-08-13T11:41:29.458086" elapsed="0.334425"/>
 </kw>
-<status status="PASS" start="2024-08-13T11:29:02.912674" elapsed="0.142938"/>
+<status status="PASS" start="2024-08-13T11:41:29.458086" elapsed="0.334425"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-08-13T11:29:03.556029" level="INFO">Slept 500 milliseconds.</msg>
+<msg time="2024-08-13T11:41:30.293028" level="INFO">Slept 500 milliseconds.</msg>
 <arg>.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-08-13T11:29:03.055612" elapsed="0.500417"/>
+<status status="PASS" start="2024-08-13T11:41:29.792511" elapsed="0.500517"/>
 </kw>
 <arg>${LoginScenario}</arg>
-<status status="PASS" start="2024-08-13T11:29:02.568770" elapsed="0.987259"/>
+<status status="PASS" start="2024-08-13T11:41:29.199268" elapsed="1.093760"/>
 </kw>
 <arg>Attempt Login</arg>
 <arg>${LoginScenario}</arg>
 <doc>Runs the keyword and continues execution even if a failure occurs.</doc>
-<status status="PASS" start="2024-08-13T11:29:02.568770" elapsed="0.987259"/>
+<status status="PASS" start="2024-08-13T11:41:29.199268" elapsed="1.093760"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
 <kw name="Verify Login Page Error Message" owner="TrendyolApp">
 <kw name="Verify Error Message" owner="LogIn">
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:29:03.609992" level="INFO">Current page contains text 'Lütfen geçerli bir e-posta adresi giriniz.'.</msg>
+<msg time="2024-08-13T11:41:30.343044" level="INFO">Current page contains text 'Lütfen geçerli bir e-posta adresi giriniz.'.</msg>
 <arg>${LoginScenario[2]}</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-08-13T11:29:03.556532" elapsed="0.053460"/>
+<status status="PASS" start="2024-08-13T11:41:30.294037" elapsed="0.049007"/>
 </kw>
 <arg>${LoginScenario}</arg>
-<status status="PASS" start="2024-08-13T11:29:03.556532" elapsed="0.053460"/>
+<status status="PASS" start="2024-08-13T11:41:30.294037" elapsed="0.049007"/>
 </kw>
 <arg>${LoginScenario}</arg>
-<status status="PASS" start="2024-08-13T11:29:03.556532" elapsed="0.053460"/>
+<status status="PASS" start="2024-08-13T11:41:30.293028" elapsed="0.050016"/>
 </kw>
 <arg>Verify Login Page Error Message</arg>
 <arg>${LoginScenario}</arg>
 <doc>Runs the keyword and continues execution even if a failure occurs.</doc>
-<status status="PASS" start="2024-08-13T11:29:03.556532" elapsed="0.053460"/>
+<status status="PASS" start="2024-08-13T11:41:30.293028" elapsed="0.050016"/>
 </kw>
 <var name="${LoginScenario}">['', '@bt100Sx1', 'Lütfen geçerli bir e-posta adresi giriniz.']</var>
-<status status="PASS" start="2024-08-13T11:29:01.912821" elapsed="1.697171"/>
+<status status="PASS" start="2024-08-13T11:41:27.266996" elapsed="3.076048"/>
 </iter>
 <iter>
 <kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
 <kw name="Navigate To Sign In Page" owner="TrendyolApp">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:29:03.610495" level="INFO">Opening url 'https://www.trendyol.com/giris?cb=%2F'</msg>
+<msg time="2024-08-13T11:41:30.344045" level="INFO">Opening url 'https://www.trendyol.com/giris?cb=%2F'</msg>
 <arg>https://www.trendyol.com/giris?cb=%2F</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-08-13T11:29:03.610495" elapsed="0.554478"/>
+<status status="PASS" start="2024-08-13T11:41:30.344045" elapsed="0.488205"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-13T11:41:31.132392" level="INFO">Slept 300 milliseconds.</msg>
+<arg>.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-13T11:41:30.832250" elapsed="0.300142"/>
 </kw>
 <kw name="Correct login page loads" owner="TrendyolApp">
 <kw name="Verify Page Loaded" owner="LogIn">
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:29:04.192981" level="INFO">Current page contains element 'css = .mr-5'.</msg>
+<msg time="2024-08-13T11:41:31.156903" level="INFO">Current page contains element 'css = .mr-5'.</msg>
 <arg>${SIGNIN_PAGE_VERIFIER_HEADING}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-08-13T11:29:04.165974" elapsed="0.027007"/>
+<status status="PASS" start="2024-08-13T11:41:31.133393" elapsed="0.023510"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:29:04.193484" level="INFO">Verifying element 'css = .mr-5' contains exact text 'Giriş Yap'.</msg>
+<msg time="2024-08-13T11:41:31.156903" level="INFO">Verifying element 'css = .mr-5' contains exact text 'Giriş Yap'.</msg>
 <arg>${SIGNIN_PAGE_VERIFIER_HEADING}</arg>
 <arg>Giriş Yap</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-08-13T11:29:04.192981" elapsed="0.053526"/>
+<status status="PASS" start="2024-08-13T11:41:31.156903" elapsed="0.049738"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:29:04.273018" level="INFO">Current page contains element 'xpath = //label[.='E-Posta']'.</msg>
+<msg time="2024-08-13T11:41:31.230159" level="INFO">Current page contains element 'xpath = //label[.='E-Posta']'.</msg>
 <arg>${SIGNIN_PAGE_VERIFIER_ELEMENTS_1}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-08-13T11:29:04.246507" elapsed="0.026511"/>
+<status status="PASS" start="2024-08-13T11:41:31.206641" elapsed="0.023518"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:29:04.273018" level="INFO">Verifying element 'xpath = //label[.='E-Posta']' contains exact text 'E-Posta'.</msg>
+<msg time="2024-08-13T11:41:31.230159" level="INFO">Verifying element 'xpath = //label[.='E-Posta']' contains exact text 'E-Posta'.</msg>
 <arg>${SIGNIN_PAGE_VERIFIER_ELEMENTS_1}</arg>
 <arg>E-Posta</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-08-13T11:29:04.273018" elapsed="0.052613"/>
+<status status="PASS" start="2024-08-13T11:41:31.230159" elapsed="0.049294"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:29:04.353664" level="INFO">Current page contains element 'xpath = //label[.='Şifre']'.</msg>
+<msg time="2024-08-13T11:41:31.302995" level="INFO">Current page contains element 'xpath = //label[.='Şifre']'.</msg>
 <arg>${SIGNIN_PAGE_VERIFIER_ELEMENTS_2}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-08-13T11:29:04.325631" elapsed="0.028033"/>
+<status status="PASS" start="2024-08-13T11:41:31.279453" elapsed="0.023542"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:29:04.353664" level="INFO">Verifying element 'xpath = //label[.='Şifre']' contains exact text 'Şifre'.</msg>
+<msg time="2024-08-13T11:41:31.302995" level="INFO">Verifying element 'xpath = //label[.='Şifre']' contains exact text 'Şifre'.</msg>
 <arg>${SIGNIN_PAGE_VERIFIER_ELEMENTS_2}</arg>
 <arg>Şifre</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-08-13T11:29:04.353664" elapsed="0.055527"/>
+<status status="PASS" start="2024-08-13T11:41:31.302995" elapsed="0.048551"/>
 </kw>
-<status status="PASS" start="2024-08-13T11:29:04.164973" elapsed="0.244218"/>
+<status status="PASS" start="2024-08-13T11:41:31.132392" elapsed="0.219154"/>
 </kw>
-<status status="PASS" start="2024-08-13T11:29:04.164973" elapsed="0.244218"/>
+<status status="PASS" start="2024-08-13T11:41:31.132392" elapsed="0.219154"/>
 </kw>
-<status status="PASS" start="2024-08-13T11:29:03.610495" elapsed="0.798696"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-13T11:41:32.251926" level="INFO">Slept 900 milliseconds.</msg>
+<arg>.9s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-13T11:41:31.351546" elapsed="0.900380"/>
+</kw>
+<status status="PASS" start="2024-08-13T11:41:30.343044" elapsed="1.908882"/>
 </kw>
 <arg>Navigate To Sign In Page</arg>
 <doc>Runs the keyword and continues execution even if a failure occurs.</doc>
-<status status="PASS" start="2024-08-13T11:29:03.610495" elapsed="0.798696"/>
+<status status="PASS" start="2024-08-13T11:41:30.343044" elapsed="1.908882"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
 <kw name="Attempt Login" owner="TrendyolApp">
@@ -809,103 +857,103 @@
 <kw name="Clear Element Text" owner="SeleniumLibrary">
 <arg>${USER_EMAIL_ELEMENT}</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-13T11:29:04.409694" elapsed="0.062808"/>
+<status status="PASS" start="2024-08-13T11:41:32.252429" elapsed="0.046529"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:29:04.472502" level="INFO">Typing text '' into text field 'xpath=//*[@id="login-email"]'.</msg>
+<msg time="2024-08-13T11:41:32.299461" level="INFO">Typing text '' into text field 'xpath=//*[@id="login-email"]'.</msg>
 <arg>${USER_EMAIL_ELEMENT}</arg>
 <arg>${LoginScenario[0]}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-13T11:29:04.472502" elapsed="0.109038"/>
+<status status="PASS" start="2024-08-13T11:41:32.298958" elapsed="0.073543"/>
 </kw>
 <kw name="Clear Element Text" owner="SeleniumLibrary">
 <arg>${USER_PASSWORD_ELEMENT}</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-13T11:29:04.581540" elapsed="0.062331"/>
+<status status="PASS" start="2024-08-13T11:41:32.372501" elapsed="0.046398"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:29:04.643871" level="INFO">Typing text '' into text field 'xpath=//*[@id="login-password-input"]'.</msg>
+<msg time="2024-08-13T11:41:32.418899" level="INFO">Typing text '' into text field 'xpath=//*[@id="login-password-input"]'.</msg>
 <arg>${USER_PASSWORD_ELEMENT}</arg>
 <arg>${LoginScenario[1]}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-13T11:29:04.643871" elapsed="0.108173"/>
+<status status="PASS" start="2024-08-13T11:41:32.418899" elapsed="0.070667"/>
 </kw>
 <arg>${LoginScenario}</arg>
-<status status="PASS" start="2024-08-13T11:29:04.409694" elapsed="0.342350"/>
+<status status="PASS" start="2024-08-13T11:41:32.252429" elapsed="0.237137"/>
 </kw>
 <kw name="Click Submit Button" owner="LogIn">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:29:04.752044" level="INFO">Clicking button 'xpath=//button[@class='q-primary q-fluid q-button-medium q-button submit']'.</msg>
+<msg time="2024-08-13T11:41:32.490070" level="INFO">Clicking button 'xpath=//button[@class='q-primary q-fluid q-button-medium q-button submit']'.</msg>
 <arg>${SUBMIT_BUTTON}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-13T11:29:04.752044" elapsed="0.144251"/>
+<status status="PASS" start="2024-08-13T11:41:32.490070" elapsed="0.327608"/>
 </kw>
-<status status="PASS" start="2024-08-13T11:29:04.752044" elapsed="0.144251"/>
+<status status="PASS" start="2024-08-13T11:41:32.489566" elapsed="0.328112"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-08-13T11:29:05.396571" level="INFO">Slept 500 milliseconds.</msg>
+<msg time="2024-08-13T11:41:33.318221" level="INFO">Slept 500 milliseconds.</msg>
 <arg>.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-08-13T11:29:04.896295" elapsed="0.500276"/>
+<status status="PASS" start="2024-08-13T11:41:32.817678" elapsed="0.500543"/>
 </kw>
 <arg>${LoginScenario}</arg>
-<status status="PASS" start="2024-08-13T11:29:04.409694" elapsed="0.986877"/>
+<status status="PASS" start="2024-08-13T11:41:32.252429" elapsed="1.065792"/>
 </kw>
 <arg>Attempt Login</arg>
 <arg>${LoginScenario}</arg>
 <doc>Runs the keyword and continues execution even if a failure occurs.</doc>
-<status status="PASS" start="2024-08-13T11:29:04.409694" elapsed="0.986877"/>
+<status status="PASS" start="2024-08-13T11:41:32.251926" elapsed="1.066295"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
 <kw name="Verify Login Page Error Message" owner="TrendyolApp">
 <kw name="Verify Error Message" owner="LogIn">
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-08-13T11:29:05.451093" level="INFO">Current page contains text 'Lütfen geçerli bir e-posta adresi giriniz.'.</msg>
+<msg time="2024-08-13T11:41:33.368251" level="INFO">Current page contains text 'Lütfen geçerli bir e-posta adresi giriniz.'.</msg>
 <arg>${LoginScenario[2]}</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-08-13T11:29:05.397572" elapsed="0.053521"/>
+<status status="PASS" start="2024-08-13T11:41:33.318724" elapsed="0.049527"/>
 </kw>
 <arg>${LoginScenario}</arg>
-<status status="PASS" start="2024-08-13T11:29:05.397572" elapsed="0.053521"/>
+<status status="PASS" start="2024-08-13T11:41:33.318724" elapsed="0.049527"/>
 </kw>
 <arg>${LoginScenario}</arg>
-<status status="PASS" start="2024-08-13T11:29:05.396571" elapsed="0.054522"/>
+<status status="PASS" start="2024-08-13T11:41:33.318724" elapsed="0.049527"/>
 </kw>
 <arg>Verify Login Page Error Message</arg>
 <arg>${LoginScenario}</arg>
 <doc>Runs the keyword and continues execution even if a failure occurs.</doc>
-<status status="PASS" start="2024-08-13T11:29:05.396571" elapsed="0.054522"/>
+<status status="PASS" start="2024-08-13T11:41:33.318724" elapsed="0.049527"/>
 </kw>
 <var name="${LoginScenario}">['', '', 'Lütfen geçerli bir e-posta adresi giriniz.']</var>
-<status status="PASS" start="2024-08-13T11:29:03.610495" elapsed="1.840598"/>
+<status status="PASS" start="2024-08-13T11:41:30.343044" elapsed="3.025207"/>
 </iter>
 <var>${LoginScenario}</var>
 <value>@{InvalidLoginScenarios}</value>
-<status status="PASS" start="2024-08-13T11:28:53.700451" elapsed="11.750642"/>
+<status status="PASS" start="2024-08-13T11:41:15.744229" elapsed="17.624525"/>
 </for>
 <arg>@{InvalidLoginScenarios}</arg>
-<status status="PASS" start="2024-08-13T11:28:53.700451" elapsed="11.750642"/>
+<status status="PASS" start="2024-08-13T11:41:15.744229" elapsed="17.624525"/>
 </kw>
-<status status="PASS" start="2024-08-13T11:28:53.698945" elapsed="11.752148"/>
+<status status="PASS" start="2024-08-13T11:41:15.742228" elapsed="17.626526"/>
 </test>
 <kw name="End Test Suite" owner="Common" type="TEARDOWN">
 <kw name="End Web Test" owner="Common">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-08-13T11:29:06.453665" level="INFO">Slept 1 second.</msg>
+<msg time="2024-08-13T11:41:34.369853" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-08-13T11:29:05.453159" elapsed="1.000506"/>
+<status status="PASS" start="2024-08-13T11:41:33.369755" elapsed="1.000098"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-08-13T11:29:06.453665" elapsed="2.163394"/>
+<status status="PASS" start="2024-08-13T11:41:34.369853" elapsed="2.734395"/>
 </kw>
-<status status="PASS" start="2024-08-13T11:29:05.453159" elapsed="3.163900"/>
+<status status="PASS" start="2024-08-13T11:41:33.369755" elapsed="3.734493"/>
 </kw>
-<status status="PASS" start="2024-08-13T11:29:05.452157" elapsed="3.164902"/>
+<status status="PASS" start="2024-08-13T11:41:33.369755" elapsed="3.734493"/>
 </kw>
 <doc>This is some basic info about the whole suite</doc>
-<status status="PASS" start="2024-08-13T11:28:49.862887" elapsed="18.754172"/>
+<status status="PASS" start="2024-08-13T11:41:07.337861" elapsed="29.766387"/>
 </suite>
 <statistics>
 <total>

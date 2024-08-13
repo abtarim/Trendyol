@@ -5,8 +5,8 @@ class App():
         return self
     def emptyBrowser(self):
         return "about:blank"
-    def browser(self):
-        return "chrome"
+    # def browser(self):
+    #     return "chrome"
     def urlAddress(self):
         return "https://www.trendyol.com/butik/liste/2/erkek"
     def searchTerm(self):

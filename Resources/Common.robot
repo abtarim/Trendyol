@@ -29,7 +29,7 @@ End Web Test
 
 Set Suite Variables
     ${empty_browser} =      App.emptyBrowser
-    ${browser} =            App.browser
+#    ${browser} =            App.browser
     ${start_url} =          App.urlAddress
     ${search_term} =        App.searchTerm
     ${user_email} =         App.userEmail
@@ -38,7 +38,7 @@ Set Suite Variables
 
     Set Suite Variable    &USER     &{user}
     Set Suite Variable    ${EMPTY_BROWSER}          ${empty_browser}
-    Set Suite Variable    ${BROWSER}                ${browser}
+#    Set Suite Variable    ${BROWSER}                ${browser}
     Set Suite Variable    ${START_URL}              ${start_url}
     Set Suite Variable    ${SEARCH_TERM}            ${search_term}
 
